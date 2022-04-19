@@ -1,0 +1,14 @@
+.img-header{
+    height:350px;
+    width:100%;
+    overflow-y: hidden;
+    @include posCentre;
+    img{ 
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+    }
+   @media(max-width:$break-point)
+   { img{ width: 100%;}
+}
+}

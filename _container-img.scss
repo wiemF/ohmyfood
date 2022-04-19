@@ -1,0 +1,11 @@
+.container-img {
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow-y: hidden;
+    img{ 
+        object-fit: cover;
+   }
+    
+}

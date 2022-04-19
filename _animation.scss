@@ -1,0 +1,50 @@
+<<<<<<< HEAD
+@keyframes check-spin {
+    0%{
+        transform:rotate(300);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(0);
+    }
+}
+@keyframes apaarition-menu {
+    0%{ opacity: 0;
+        transform:translatey(150%);
+        
+    } 
+    100%{
+        opacity: 1;
+        transform:translatey(0);
+        
+    }
+
+    
+=======
+@keyframes check-spin {
+    0%{
+        transform:rotate(300);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(0);
+    }
+}
+@keyframes apaarition-menu {
+    0%{ opacity: 0;
+        transform:translatey(150%);
+        
+    } 
+    100%{
+        opacity: 1;
+        transform:translatey(0);
+        
+    }
+
+    
+>>>>>>> 2696690fd551f28280939a1e015132aa6fc55738
+}

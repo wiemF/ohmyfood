@@ -1,0 +1,154 @@
+.form {
+    width: 100%;
+    padding-bottom: $grid-gutter;
+    @include posCentre() ;
+    display: flex;
+    flex-wrap: wrap;
+    &__field {
+        & label {
+            color: $colour-accent;
+            display: block;
+            font-size: 2rem;
+            line-height: 2rem;
+            padding-top: $grid-gutter;
+            cursor: pointer;
+        }
+        & input {
+            background: transparent;
+            border: none;
+            color: $colour-black;
+            font-size: large;
+            font-weight: bold;
+         }
+    }
+}
+.Recherche{
+    width: 100% ;
+    background-color: $colour-accent;
+    display: flex ;
+    flex-wrap: wrap ;
+    @include posCentre;
+    padding-left: 20px;
+    padding-right: 20px;
+}   
+.description{
+    padding-bottom: 30px;
+    width: 100% ;
+    background-color: $colour-accent;
+    flex-direction: column;
+    @include posCentre;
+    padding-left: 30px;
+    padding-right: 30px;
+     h2{
+    text-align: center;
+    }
+    p{
+    text-align: center;
+    }
+}
+.emplacement{
+    width: 100% ;
+    background-color: darken($colour-accent,10%);
+    @include posCentre;
+    .emp-details{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: $colour-black;
+        width:auto;  
+        display: flex;
+        & input{
+            padding-left: 1rem;
+        }
+        & i{
+          width: 20px;
+          @include posCentre;
+          font-size: large;
+          margin-right: 1rem;
+        } 
+    }
+}
+#fonctionnement{
+    width: 100% ;
+    background-color: $colour-white;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+#restaurant{
+    width: 100% ;
+    background-color: $colour-accent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    @media (max-width : $break-point) {
+        flex-direction: column ;
+        @include posCentre ;
+    }
+}
+.compteur{
+    padding:10px ;
+    color: $colour-white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    @include posCentre;
+    position: absolute;
+    left: -13px;
+}
+.badge-nouveau {
+    background: $colour-green;
+    color: green;
+    display: inline;
+    padding: 5px 20px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: large;
+}
+.rest-details{
+    display:flex;
+    padding-bottom: 20px;
+    padding-Top: 20px;
+    padding-right: 20px;
+    background-color: $colour-white;
+    border-radius: 0px 0px 15px 15px ;
+    margin-top: 0;
+    justify-content: space-between;
+}
+.description-rest{
+    justify-content: center;
+    padding-left:10px;
+}
+.line-baspage{
+    display: flex;
+    & i{
+        padding-right: 20px;
+        height: 30px;
+        width: 40px;
+    }
+    & a{
+       @include a-no-decoration($colour-black);
+     }
+}
+.page-home{
+    display:flex;
+    margin:0;
+}
+.lien{
+    width: 15%;
+    @include posCentre;
+    font-size: x-large;
+    a{
+        @include a-no-decoration($colour-black);
+    }
+}
+
+
+
+    
+    
+    

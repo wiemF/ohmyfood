@@ -1,0 +1,21 @@
+.liste-boutton{
+    display: flex;
+   padding-left: 30px;
+   padding-right: 30px;
+   justify-content: space-between;
+   @media (max-width:$break-point) {
+       flex-direction: column;
+   }
+   
+   & i{
+       width: 40px;
+       height: 35px;
+       @include posCentre ;
+       background: transparent;
+   }
+
+   @media (max-width:$break-point){
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+}

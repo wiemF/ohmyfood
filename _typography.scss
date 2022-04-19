@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $colour-white;
+    color: $colour-black;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 900;
+    font-size: 4rem;
+    font-style: italic;
+    color: $colour-secondary;
+}
+
+h2 { 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: $colour-black;
+    margin-top: 20px;
+    
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $colour-black;
+    width:auto;  
+    & i{
+        width: 20px;
+        @include posCentre;
+        font-size: large;
+    } 
+}
+h4{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: $colour-secondary;
+}
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75rem;
+    position: relative;
+    
+}

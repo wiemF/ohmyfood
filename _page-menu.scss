@@ -1,0 +1,265 @@
+<<<<<<< HEAD
+.page-menu{
+    padding-left: 10px;
+    padding-right: 15px;
+    display: flex;
+    
+    @media(max-width:$break-point){ 
+       display: block;
+       flex-direction: column;
+    }   
+}
+.group-plats{
+    width: 33%;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    
+    @media(max-width:$break-point){ 
+        width: 100%;
+     }  
+}
+.menu-composant{
+    &::before{
+       opacity: 0; 
+    }
+    @for $i from 1 to 15{
+        &:nth-child(#{$i}){
+            animation-delay: 200ms*$i;
+        }
+    }
+    animation:apaarition-menu 2s;
+    cursor: pointer;
+    height: fit-content;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $colour-white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 2px 10px 0px #bdbbbb;
+    overflow: hidden;
+    
+    .description-plat{
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+        font-size: 16px;
+    }
+    .nom-plat{
+        flex-wrap: wrap;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        .check-plat{
+        	right: 0;   
+        & i{
+            animation: check-spin 0.5s ease-in-out;
+            }
+        }   
+        .prix-plat{
+            right: 2rem;
+            width: 25%;
+        }
+        .plat{
+            width: 65%;
+        }
+        .description-plat{
+            overflow: hidden;
+            white-space: nowrap; 
+        }
+        .nom-plat{
+            overflow: hidden;
+            white-space: nowrap; 
+            text-overflow: ellipsis;
+        }
+    }
+    
+    @media (max-widh:$break-point) {
+        &:active 
+        .check-plat{
+        	right: 0;   
+         i{
+            animation: check-spin 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+.plat{
+    width: 80%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+    
+.prix-plat{
+    width: 15%;
+    position: relative;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: -7%;
+    display: flex;
+    font-weight: bold;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.check-plat{
+    width: 15%;
+    i{ 
+        color: $colour-white;   
+    }
+    background-color: $colour-green;
+    position: relative;
+    right: -15%;
+    @include posCentre ;
+    transition: all 0.5s;
+}
+
+.type-plats{
+    padding-left: 10px;
+    margin-bottom: -15px;
+}
+.trait{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    height: 10px;
+    color: #99E2D0;
+    margin-top: 0;
+}
+
+=======
+.page-menu{
+    padding-left: 10px;
+    padding-right: 15px;
+    display: flex;
+    
+    @media(max-width:$break-point){ 
+       display: block;
+       flex-direction: column;
+    }   
+}
+.group-plats{
+    width: 33%;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    
+    @media(max-width:$break-point){ 
+        width: 100%;
+     }  
+}
+.menu-composant{
+    &::before{
+       opacity: 0; 
+    }
+    @for $i from 1 to 15{
+        &:nth-child(#{$i}){
+            animation-delay: 200ms*$i;
+        }
+    }
+    animation:apaarition-menu 2s;
+    cursor: pointer;
+    height: fit-content;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $colour-white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 2px 10px 0px #bdbbbb;
+    overflow: hidden;
+    
+    .description-plat{
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+        font-size: 16px;
+    }
+    .nom-plat{
+        flex-wrap: wrap;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        .check-plat{
+        	right: 0;   
+        & i{
+            animation: check-spin 0.5s ease-in-out;
+            }
+        }   
+        .prix-plat{
+            right: 2rem;
+            width: 25%;
+        }
+        .plat{
+            width: 65%;
+        }
+        .description-plat{
+            overflow: hidden;
+            white-space: nowrap; 
+        }
+        .nom-plat{
+            overflow: hidden;
+            white-space: nowrap; 
+            text-overflow: ellipsis;
+        }
+    }
+    
+    @media (max-widh:$break-point) {
+        &:active 
+        .check-plat{
+        	right: 0;   
+         i{
+            animation: check-spin 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+.plat{
+    width: 80%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+    
+.prix-plat{
+    width: 15%;
+    position: relative;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: -7%;
+    display: flex;
+    font-weight: bold;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.check-plat{
+    width: 15%;
+    i{ 
+        color: $colour-white;   
+    }
+    background-color: $colour-green;
+    position: relative;
+    right: -15%;
+    @include posCentre ;
+    transition: all 0.5s;
+}
+
+.type-plats{
+    padding-left: 10px;
+    margin-bottom: -15px;
+}
+.trait{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    height: 10px;
+    color: #99E2D0;
+    margin-top: 0;
+}
+
+>>>>>>> 2696690fd551f28280939a1e015132aa6fc55738
